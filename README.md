@@ -54,3 +54,9 @@ Irá abrir o arquivo de edição para o modo interativo.
     #
     # However, if you remove everything, the rebase will be aborted.
     #
+
+
+## Referências
+
+- [Usando Git Direito | Limpando seus Commits!](https://youtu.be/6OokP-NE49k)
+- [Git: Documentation](https://git-scm.com/docs)
