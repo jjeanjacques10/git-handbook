@@ -15,3 +15,9 @@ git commit -m "Mensagem de commit correta" --amend
 git reset --soft HEAD~3 # Com a flag soft ele não remove os commits anteriores
 git reset HEAD~3 # Apenas remove os últimos commits
 ```
+
+- Para abrir o modo interativo, basta digitar o comando:
+
+``` bash
+git rebase -i HEAD~3 # Fara isso nos últimos 3 commits
+```
