@@ -13,7 +13,13 @@ git commit -m "Mensagem de commit correta" --amend
 
 ``` bash
 git reset --soft HEAD~3 # Com a flag soft ele não remove os commits anteriores
-git reset HEAD~3 # Apenas remove os últimos commits
+git reset HEAD~3 # Apenas remove os últimos 3 commits
+```
+
+- Apaga apenas o último commit feito sem remover o código modificado
+
+``` bash
+git reset --soft HEAD^
 ```
 
 - Para abrir o modo interativo, basta digitar o comando:
