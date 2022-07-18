@@ -61,6 +61,16 @@ Irá abrir o arquivo de edição para o modo interativo.
     # However, if you remove everything, the rebase will be aborted.
     #
 
+- Altera nome da branch
+
+``` bash
+# Local
+git branch -m <nome-branch>
+
+# Altera branch remota
+git push origin --delete <nome-branch>
+git push origin -u bugfix
+```
 
 ## Referências
 
