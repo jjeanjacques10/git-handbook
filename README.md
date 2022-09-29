@@ -55,6 +55,27 @@ Irá abrir o arquivo de edição para o modo interativo.
     # However, if you remove everything, the rebase will be aborted.
     #
 
+## log
+
+- Exibe o histórico dos últimos commits
+
+``` bash
+git log
+```
+
+- Exibe histórico de commits de forma resumida em apenas uma linha
+
+``` bash
+git log --pretty=oneline
+
+# output
+5aedf3372f40d89f6813a428430b564e86ca07d5 (HEAD -> main) add license
+84ff2d267214fa53d8c3fbe775f5808435858c4f add references
+635edb6c582531c03b1057916a513d59851b2286 add rebase info
+2cfe25aa48ed56038a925f165f5f835b946b30e9 add rebase
+f5fc633acc731b6f781083fb7f52a10be09a6448 explaining reset
+6cfdc6ac39350c0da432f0bef565616c428172dd Mensagem de commit correta
+```
 
 ## Referências
 
