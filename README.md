@@ -2,27 +2,42 @@
 
 Guia de bolso com comandos mais avançados para utilizar o git.
 
-- Mensagem de commit errada
+## Índice
+
+- [Mais utilizados](#mais-utilizados)
+  - [Mensagem de commit errada](#mensagem-de-commit-errada)
+  - [Apaga os commits feitos, mas não perde o que foi modificado](#apaga-os-commits-feitos-mas-não-perde-o-que-foi-modificado)
+  - [Apaga apenas o último commit feito sem remover o código modificado](#apaga-apenas-o-último-commit-feito-sem-remover-o-código-modificado)
+  - [Para abrir o modo interativo, basta digitar o comando](#para-abrir-o-modo-interativo-basta-digitar-o-comando)
+  - [Altera nome da branch](#altera-nome-da-branch)
+  - [Atualiza branch remota](#atualiza-branch-remota)
+- [Log](#log)
+  - [Exibe o histórico dos últimos commits](#exibe-o-histórico-dos-últimos-commits)
+  - [Exibe histórico de commits de forma resumida em apenas uma linha](#exibe-histórico-de-commits-de-forma-resumida-em-apenas-uma-linha)
+
+## Mais utilizados
+
+#### Mensagem de commit errada
 
 ``` bash
 git commit -m "Mensagem de commit errada"
 git commit -m "Mensagem de commit correta" --amend
 ```
 
-- Apaga os commits feitos, mas não perde o que foi modificado
+#### Apaga os commits feitos, mas não perde o que foi modificado
 
 ``` bash
 git reset --soft HEAD~3 # Com a flag soft ele não remove os commits anteriores
 git reset HEAD~3 # Apenas remove os últimos 3 commits
 ```
 
-- Apaga apenas o último commit feito sem remover o código modificado
+#### Apaga apenas o último commit feito sem remover o código modificado
 
 ``` bash
 git reset --soft HEAD^
 ```
 
-- Para abrir o modo interativo, basta digitar o comando:
+#### Para abrir o modo interativo, basta digitar o comando
 
 ``` bash
 git rebase -i HEAD~3 # Fara isso nos últimos 3 commits
@@ -61,7 +76,7 @@ Irá abrir o arquivo de edição para o modo interativo.
     # However, if you remove everything, the rebase will be aborted.
     #
 
-- Altera nome da branch
+#### Altera nome da branch
 
 ``` bash
 # Local
@@ -72,7 +87,7 @@ git push origin --delete <nome-branch>
 git push origin -u bugfix
 ```
 
-- Atualiza branch remota
+#### Atualiza branch remota
 
 ``` bash
 git remote origin set-url <url>
@@ -80,13 +95,13 @@ git remote origin set-url <url>
 
 ## Log
 
-- Exibe o histórico dos últimos commits
+#### Exibe o histórico dos últimos commits
 
 ``` bash
 git log
 ```
 
-- Exibe histórico de commits de forma resumida em apenas uma linha
+#### Exibe histórico de commits de forma resumida em apenas uma linha
 
 ``` bash
 git log --pretty=oneline
