@@ -72,6 +72,12 @@ git push origin --delete <nome-branch>
 git push origin -u bugfix
 ```
 
+- Atualiza branch remota
+
+``` bash
+git remote origin set-url <url>
+```
+
 ## Log
 
 - Exibe o histórico dos últimos commits
