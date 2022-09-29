@@ -13,7 +13,13 @@ git commit -m "Mensagem de commit correta" --amend
 
 ``` bash
 git reset --soft HEAD~3 # Com a flag soft ele não remove os commits anteriores
-git reset HEAD~3 # Apenas remove os últimos commits
+git reset HEAD~3 # Apenas remove os últimos 3 commits
+```
+
+- Apaga apenas o último commit feito sem remover o código modificado
+
+``` bash
+git reset --soft HEAD^
 ```
 
 - Para abrir o modo interativo, basta digitar o comando:
@@ -55,7 +61,18 @@ Irá abrir o arquivo de edição para o modo interativo.
     # However, if you remove everything, the rebase will be aborted.
     #
 
-## log
+- Altera nome da branch
+
+``` bash
+# Local
+git branch -m <nome-branch>
+
+# Altera branch remota
+git push origin --delete <nome-branch>
+git push origin -u bugfix
+```
+
+## Log
 
 - Exibe o histórico dos últimos commits
 
