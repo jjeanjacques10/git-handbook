@@ -90,7 +90,7 @@ git push origin -u bugfix
 #### Atualiza branch remota
 
 ``` bash
-git remote origin set-url <url>
+git remote set-url origin <url>
 ```
 
 ## Log
