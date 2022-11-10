@@ -14,6 +14,7 @@ Guia de bolso com comandos mais avançados para utilizar o git.
 - [Log](#log)
   - [Exibe o histórico dos últimos commits](#exibe-o-histórico-dos-últimos-commits)
   - [Exibe histórico de commits de forma resumida em apenas uma linha](#exibe-histórico-de-commits-de-forma-resumida-em-apenas-uma-linha)
+  - [Exibe histórico de commits agrupados por autor](#exibe-histórico-de-commits-agrupados-por-autor)
 
 ## Mais utilizados
 
@@ -113,6 +114,22 @@ git log --pretty=oneline
 2cfe25aa48ed56038a925f165f5f835b946b30e9 add rebase
 f5fc633acc731b6f781083fb7f52a10be09a6448 explaining reset
 6cfdc6ac39350c0da432f0bef565616c428172dd Mensagem de commit correta
+```
+
+#### Exibe histórico de commits agrupados por autor
+
+``` bash
+git shortlog
+
+# output
+Jean Jacques Nascimento Barros (2):
+      uncommit last git commit
+      add change branch name
+
+jjeanjacques10 (11):
+      Mensagem de commit correta
+      explaining reset
+      <..>
 ```
 
 ## Referências
