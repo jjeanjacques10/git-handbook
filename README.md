@@ -15,6 +15,8 @@ Guia de bolso com comandos mais avançados para utilizar o git.
   - [Exibe o histórico dos últimos commits](#exibe-o-histórico-dos-últimos-commits)
   - [Exibe histórico de commits de forma resumida em apenas uma linha](#exibe-histórico-de-commits-de-forma-resumida-em-apenas-uma-linha)
   - [Exibe histórico de commits agrupados por autor](#exibe-histórico-de-commits-agrupados-por-autor)
+- [Controle](#controle)
+  - [Remove diretório do Git](#remove-diretório-do-git)
 
 ## Mais utilizados
 
@@ -130,6 +132,14 @@ jjeanjacques10 (11):
       Mensagem de commit correta
       explaining reset
       <..>
+```
+
+## Controle
+
+#### Remove diretório do Git
+
+``` bash
+git rm -r --cached myFolder
 ```
 
 ## Referências
